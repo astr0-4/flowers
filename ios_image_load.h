@@ -16,12 +16,17 @@
 #define TENSORFLOW_EXAMPLES_IOS_IOS_IMAGE_LOAD_H_
 
 #include <vector>
-
 #include "tensorflow/core/framework/types.h"
+#import <QuartzCore/QuartzCore.h>
 
 std::vector<tensorflow::uint8> LoadImageFromFile(const char* file_name,
 						 int* out_width,
 						 int* out_height,
 						 int* out_channels);
+
+std::vector<tensorflow::uint8> LoadImage(CGImage *image,
+                                                 int* out_width,
+                                                 int* out_height,
+                                                 int* out_channels);
 
 #endif  // TENSORFLOW_EXAMPLES_IOS_IOS_IMAGE_LOAD_H_
