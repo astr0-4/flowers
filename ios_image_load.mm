@@ -85,3 +85,28 @@ std::vector<uint8> LoadImageFromFile(const char* file_name,
   *out_channels = channels;
   return result;
 }
+
+std::vector<uint8> LoadImage(CGImage *image,
+                                     int* out_width, int* out_height,
+                                     int* out_channels) {
+
+    const int width = (int)CGImageGetWidth(image);
+    const int height = (int)CGImageGetHeight(image);
+    const int channels = 4;
+    CGColorSpaceRef color_space = CGColorSpaceCreateDeviceRGB();
+    const int bytes_per_row = (width * channels);
+    const int bytes_in_image = (bytes_per_row * height);
+    std::vector<uint8> result(bytes_in_image);
+    const int bits_per_component = 8;
+    CGContextRef context = CGBitmapContextCreate(result.data(), width, height,
+                                                 bits_per_component, bytes_per_row, color_space,
+                                                 kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+    CGColorSpaceRelease(color_space);
+    CGContextDrawImage(context, CGRectMake(0, 0, width, height), image);
+    CGContextRelease(context);
+
+    *out_width = width;
+    *out_height = height;
+    *out_channels = channels;
+    return result;
+}

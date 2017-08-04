@@ -12,12 +12,21 @@
 		2530463E3C9A9D5FB9299C0E /* libPods-tf_simple_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DBC33C5DD9A526EE6D1EF2 /* libPods-tf_simple_example.a */; };
 		59A3D0011CF4E68100C4259F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59A3CFF21CF4E68100C4259F /* AppDelegate.mm */; };
 		59A3D0031CF4E68100C4259F /* grace_hopper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59A3CFF51CF4E68100C4259F /* grace_hopper.jpg */; };
-		59A3D0051CF4E68100C4259F /* imagenet_comp_graph_label_strings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 59A3CFF71CF4E68100C4259F /* imagenet_comp_graph_label_strings.txt */; };
-		59A3D0071CF4E68100C4259F /* tensorflow_inception_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = 59A3CFF91CF4E68100C4259F /* tensorflow_inception_graph.pb */; };
 		59A3D0081CF4E68100C4259F /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59A3CFFB1CF4E68100C4259F /* ios_image_load.mm */; };
 		59A3D0091CF4E68100C4259F /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59A3CFFC1CF4E68100C4259F /* main.mm */; };
 		59A3D00B1CF4E68100C4259F /* RunModelViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 59A3CFFF1CF4E68100C4259F /* RunModelViewController.mm */; };
 		59A3D00C1CF4E68100C4259F /* RunModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59A3D0001CF4E68100C4259F /* RunModelViewController.xib */; };
+		FA9104AA1F337226005FB780 /* FlowerClassifier.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA9104A91F337226005FB780 /* FlowerClassifier.mm */; };
+		FA9104AD1F33723B005FB780 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9104AC1F33723B005FB780 /* PictureViewController.m */; };
+		FA9104B61F337278005FB780 /* daisy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104AE1F337278005FB780 /* daisy.jpg */; };
+		FA9104B71F337278005FB780 /* evergreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104AF1F337278005FB780 /* evergreen.jpg */; };
+		FA9104B81F337278005FB780 /* flower_retrained_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B01F337278005FB780 /* flower_retrained_labels.txt */; };
+		FA9104B91F337278005FB780 /* flower_retrained.pb in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B11F337278005FB780 /* flower_retrained.pb */; };
+		FA9104BA1F337278005FB780 /* flowers_quantized_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B21F337278005FB780 /* flowers_quantized_graph.pb */; };
+		FA9104BB1F337278005FB780 /* roses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B31F337278005FB780 /* roses.jpg */; };
+		FA9104BC1F337278005FB780 /* shoe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B41F337278005FB780 /* shoe.jpg */; };
+		FA9104BD1F337278005FB780 /* tulips.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B51F337278005FB780 /* tulips.jpg */; };
+		FA9104BF1F3372CF005FB780 /* PictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9104BE1F3372CF005FB780 /* PictureViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +37,6 @@
 		59A3CFF11CF4E68100C4259F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		59A3CFF21CF4E68100C4259F /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		59A3CFF51CF4E68100C4259F /* grace_hopper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grace_hopper.jpg; sourceTree = "<group>"; };
-		59A3CFF71CF4E68100C4259F /* imagenet_comp_graph_label_strings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = imagenet_comp_graph_label_strings.txt; sourceTree = "<group>"; };
-		59A3CFF91CF4E68100C4259F /* tensorflow_inception_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = tensorflow_inception_graph.pb; sourceTree = "<group>"; };
 		59A3CFFA1CF4E68100C4259F /* ios_image_load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_image_load.h; sourceTree = "<group>"; };
 		59A3CFFB1CF4E68100C4259F /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = "<group>"; };
 		59A3CFFC1CF4E68100C4259F /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
@@ -40,6 +47,19 @@
 		73DBC33C5DD9A526EE6D1EF2 /* libPods-tf_simple_example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tf_simple_example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ABECA6543FF90E81111A6D /* Pods-tf_simple_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tf_simple_example.release.xcconfig"; path = "Pods/Target Support Files/Pods-tf_simple_example/Pods-tf_simple_example.release.xcconfig"; sourceTree = "<group>"; };
 		8C94FEE43FD467468C5B75AA /* Pods-tf_simple_example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tf_simple_example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tf_simple_example/Pods-tf_simple_example.debug.xcconfig"; sourceTree = "<group>"; };
+		FA9104A81F337226005FB780 /* FlowerClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerClassifier.h; sourceTree = "<group>"; };
+		FA9104A91F337226005FB780 /* FlowerClassifier.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FlowerClassifier.mm; sourceTree = "<group>"; };
+		FA9104AB1F33723B005FB780 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		FA9104AC1F33723B005FB780 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
+		FA9104AE1F337278005FB780 /* daisy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daisy.jpg; sourceTree = "<group>"; };
+		FA9104AF1F337278005FB780 /* evergreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = evergreen.jpg; sourceTree = "<group>"; };
+		FA9104B01F337278005FB780 /* flower_retrained_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flower_retrained_labels.txt; sourceTree = "<group>"; };
+		FA9104B11F337278005FB780 /* flower_retrained.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = flower_retrained.pb; sourceTree = "<group>"; };
+		FA9104B21F337278005FB780 /* flowers_quantized_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = flowers_quantized_graph.pb; sourceTree = "<group>"; };
+		FA9104B31F337278005FB780 /* roses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roses.jpg; sourceTree = "<group>"; };
+		FA9104B41F337278005FB780 /* shoe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shoe.jpg; sourceTree = "<group>"; };
+		FA9104B51F337278005FB780 /* tulips.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tulips.jpg; sourceTree = "<group>"; };
+		FA9104BE1F3372CF005FB780 /* PictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PictureViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,11 @@
 			children = (
 				59A3CFF11CF4E68100C4259F /* AppDelegate.h */,
 				59A3CFF21CF4E68100C4259F /* AppDelegate.mm */,
+				FA9104A81F337226005FB780 /* FlowerClassifier.h */,
+				FA9104A91F337226005FB780 /* FlowerClassifier.mm */,
+				FA9104AB1F33723B005FB780 /* PictureViewController.h */,
+				FA9104AC1F33723B005FB780 /* PictureViewController.m */,
+				FA9104BE1F3372CF005FB780 /* PictureViewController.xib */,
 				59A3CFF31CF4E68100C4259F /* data */,
 				59A3CFFA1CF4E68100C4259F /* ios_image_load.h */,
 				59A3CFFB1CF4E68100C4259F /* ios_image_load.mm */,
@@ -107,8 +132,14 @@
 			isa = PBXGroup;
 			children = (
 				59A3CFF51CF4E68100C4259F /* grace_hopper.jpg */,
-				59A3CFF71CF4E68100C4259F /* imagenet_comp_graph_label_strings.txt */,
-				59A3CFF91CF4E68100C4259F /* tensorflow_inception_graph.pb */,
+				FA9104AE1F337278005FB780 /* daisy.jpg */,
+				FA9104AF1F337278005FB780 /* evergreen.jpg */,
+				FA9104B01F337278005FB780 /* flower_retrained_labels.txt */,
+				FA9104B11F337278005FB780 /* flower_retrained.pb */,
+				FA9104B21F337278005FB780 /* flowers_quantized_graph.pb */,
+				FA9104B31F337278005FB780 /* roses.jpg */,
+				FA9104B41F337278005FB780 /* shoe.jpg */,
+				FA9104B51F337278005FB780 /* tulips.jpg */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -147,7 +178,7 @@
 				TargetAttributes = {
 					5911579A1CF4011C00C31E3A = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 85Z3VXS37U;
+						DevelopmentTeam = ZTR68ZN56A;
 					};
 				};
 			};
@@ -175,9 +206,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				59A3D00C1CF4E68100C4259F /* RunModelViewController.xib in Resources */,
-				59A3D0051CF4E68100C4259F /* imagenet_comp_graph_label_strings.txt in Resources */,
-				59A3D0071CF4E68100C4259F /* tensorflow_inception_graph.pb in Resources */,
+				FA9104B61F337278005FB780 /* daisy.jpg in Resources */,
+				FA9104BD1F337278005FB780 /* tulips.jpg in Resources */,
 				59A3D0031CF4E68100C4259F /* grace_hopper.jpg in Resources */,
+				FA9104B71F337278005FB780 /* evergreen.jpg in Resources */,
+				FA9104BC1F337278005FB780 /* shoe.jpg in Resources */,
+				FA9104BB1F337278005FB780 /* roses.jpg in Resources */,
+				FA9104BF1F3372CF005FB780 /* PictureViewController.xib in Resources */,
+				FA9104B81F337278005FB780 /* flower_retrained_labels.txt in Resources */,
+				FA9104B91F337278005FB780 /* flower_retrained.pb in Resources */,
+				FA9104BA1F337278005FB780 /* flowers_quantized_graph.pb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				59A3D0091CF4E68100C4259F /* main.mm in Sources */,
+				FA9104AD1F33723B005FB780 /* PictureViewController.m in Sources */,
+				FA9104AA1F337226005FB780 /* FlowerClassifier.mm in Sources */,
 				59A3D0011CF4E68100C4259F /* AppDelegate.mm in Sources */,
 				59A3D00B1CF4E68100C4259F /* RunModelViewController.mm in Sources */,
 				59A3D0081CF4E68100C4259F /* ios_image_load.mm in Sources */,
@@ -338,6 +378,7 @@
 			buildSettings = {
 				CLANG_DEBUG_INFORMATION_LEVEL = default;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZTR68ZN56A;
 				ENABLE_BITCODE = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
@@ -360,6 +401,7 @@
 			buildSettings = {
 				CLANG_DEBUG_INFORMATION_LEVEL = default;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZTR68ZN56A;
 				ENABLE_BITCODE = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
