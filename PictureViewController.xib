@@ -11,27 +11,39 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PictureViewController">
             <connections>
+                <outlet property="cameraButton" destination="GbS-Kq-nK1" id="RxC-5P-ijE"/>
+                <outlet property="libraryButton" destination="7Gz-jd-k2z" id="zc6-td-UDT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbS-Kq-nK1">
-                    <rect key="frame" x="79" y="318.5" width="217" height="30"/>
-                    <state key="normal" title="Start recognizing some flowers!"/>
+                    <rect key="frame" x="148" y="269" width="79" height="30"/>
+                    <state key="normal" title="Camera 📷"/>
                     <connections>
                         <action selector="photoButtonPressed:" destination="-1" eventType="touchUpInside" id="BZf-In-R4m"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gz-jd-k2z">
+                    <rect key="frame" x="129.5" y="369" width="117" height="30"/>
+                    <state key="normal" title="Photo Library 🖼"/>
+                    <connections>
+                        <action selector="photoLibraryButtonPressed:" destination="-1" eventType="touchUpInside" id="3fY-bq-VsD"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
+                <constraint firstItem="7Gz-jd-k2z" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="50" id="9h4-am-aoN"/>
                 <constraint firstItem="GbS-Kq-nK1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IGb-uX-JPy"/>
-                <constraint firstItem="GbS-Kq-nK1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZfT-h0-rUs"/>
+                <constraint firstItem="GbS-Kq-nK1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="ZfT-h0-rUs"/>
+                <constraint firstItem="7Gz-jd-k2z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wlR-po-guz"/>
             </constraints>
+            <point key="canvasLocation" x="129" y="48"/>
         </view>
     </objects>
 </document>

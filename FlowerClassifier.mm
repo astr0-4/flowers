@@ -8,11 +8,11 @@
 
 #import "FlowerClassifier.h"
 
-NSString* RunInferenceOnImage(UIImage *image);
+NSDictionary* RunInferenceOnImage(UIImage *image);
 
 @implementation FlowerClassifier
 
-+ (NSString *)getFlowerClassificationForImage:(UIImage *)image {
++ (NSDictionary *)getFlowerClassificationForImage:(UIImage *)image {
     return RunInferenceOnImage(image);
 }
 
@@ -115,15 +115,16 @@ NSString* FilePathForResourceName(NSString* name, NSString* extension) {
     return file_path;
 }
 
-NSString* RunInferenceOnImage(UIImage* image) {
+NSDictionary* RunInferenceOnImage(UIImage* image) {
+    NSMutableDictionary *resultsDict = [[NSMutableDictionary alloc] init];
+
     tensorflow::SessionOptions options;
 
     tensorflow::Session* session_pointer = nullptr;
     tensorflow::Status session_status = tensorflow::NewSession(options, &session_pointer);
     if (!session_status.ok()) {
         std::string status_string = session_status.ToString();
-        return [NSString stringWithFormat: @"Session create failed - %s",
-                status_string.c_str()];
+        return @{@"sessionStatus": [NSString stringWithFormat:@"%s", status_string.c_str()]};
     }
     std::unique_ptr<tensorflow::Session> session(session_pointer);
     LOG(INFO) << "Session created.";
@@ -138,7 +139,7 @@ NSString* RunInferenceOnImage(UIImage* image) {
     tensorflow::Status s = session->Create(tensorflow_graph);
     if (!s.ok()) {
         LOG(ERROR) << "Could not create TensorFlow Graph: " << s;
-        return @"";
+        return @{@"error" : @"Could not create TensorFlow Graph" };;
     }
 
     // Read the label list
@@ -196,6 +197,7 @@ NSString* RunInferenceOnImage(UIImage* image) {
     }
 
     NSString* result = [network_path stringByAppendingString: @" - loaded!"];
+
     result = [NSString stringWithFormat: @"%@ - %lu, %s - %dx%d", result,
               label_strings.size(), label_strings[0].c_str(), image_width, image_height];
 
@@ -208,7 +210,7 @@ NSString* RunInferenceOnImage(UIImage* image) {
         LOG(ERROR) << "Running model failed: " << run_status;
         tensorflow::LogAllRegisteredKernels();
         result = @"Error running model";
-        return result;
+        return @{@"error" : result};
     }
     tensorflow::string status_string = run_status.ToString();
     result = [NSString stringWithFormat: @"%@ - %s", result,
@@ -222,17 +224,20 @@ NSString* RunInferenceOnImage(UIImage* image) {
 
     std::stringstream ss;
     ss.precision(3);
+
     for (const auto& result : top_results) {
         const float confidence = result.first;
         const int index = result.second;
 
-        ss << index << " " << confidence << "  ";
+        ss << " " << confidence << "  ";
 
         // Write out the result as a string
         if (index < label_strings.size()) {
             // just for safety: theoretically, the output is under 1000 unless there
             // is some numerical issues leading to a wrong prediction.
             ss << label_strings[index];
+            NSString *label = [NSString stringWithFormat:@"%s", label_strings[index].c_str()];
+            [resultsDict setObject:@(confidence) forKey:label];
         } else {
             ss << "Prediction: " << index;
         }
@@ -245,7 +250,6 @@ NSString* RunInferenceOnImage(UIImage* image) {
     tensorflow::string predictions = ss.str();
     result = [NSString stringWithFormat: @"%@ - %s", result,
               predictions.c_str()];
-    
-    return result;
+    return resultsDict;
 }
 

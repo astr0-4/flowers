@@ -11,6 +11,6 @@
 
 @interface FlowerClassifier : NSObject
 
-+ (NSString *)getFlowerClassificationForImage:(UIImage *)image;
++ (NSDictionary *)getFlowerClassificationForImage:(UIImage *)image;
 
 @end
