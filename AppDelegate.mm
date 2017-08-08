@@ -22,14 +22,8 @@
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     PictureViewController *pictureVC = [[PictureViewController alloc] init];
-    RunModelViewController *runVC = [[RunModelViewController alloc] init];
-    UITabBarController *bar = [[UITabBarController alloc] init];
-    [bar setViewControllers:@[pictureVC, runVC]];
-    [[bar.tabBar.items objectAtIndex:0] setTitle:@"Your Images"];
-    [[bar.tabBar.items objectAtIndex:1] setTitle:@"Sample Images"];
-    bar.selectedIndex = 0;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = bar;
+    self.window.rootViewController = pictureVC;
     [self.window makeKeyAndVisible];
     return YES;
 
