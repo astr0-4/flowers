@@ -93,7 +93,7 @@
                                 reverseObjectEnumerator]
                                allObjects];
 
-        if ([sortedKeys.firstObject floatValue] < 0.8) {
+        if ([sortedKeys.firstObject floatValue] < 0.4) {
             alertMessage = [[NSMutableString alloc] initWithString:@"No flowers here!"];
         } else {
             [alertMessage appendString:key];

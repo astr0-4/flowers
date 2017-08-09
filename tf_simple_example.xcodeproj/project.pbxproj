@@ -20,13 +20,13 @@
 		FA9104AD1F33723B005FB780 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9104AC1F33723B005FB780 /* PictureViewController.m */; };
 		FA9104B61F337278005FB780 /* daisy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104AE1F337278005FB780 /* daisy.jpg */; };
 		FA9104B71F337278005FB780 /* evergreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104AF1F337278005FB780 /* evergreen.jpg */; };
-		FA9104B81F337278005FB780 /* flower_retrained_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B01F337278005FB780 /* flower_retrained_labels.txt */; };
-		FA9104B91F337278005FB780 /* flower_retrained.pb in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B11F337278005FB780 /* flower_retrained.pb */; };
-		FA9104BA1F337278005FB780 /* flowers_quantized_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B21F337278005FB780 /* flowers_quantized_graph.pb */; };
 		FA9104BB1F337278005FB780 /* roses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B31F337278005FB780 /* roses.jpg */; };
 		FA9104BC1F337278005FB780 /* shoe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B41F337278005FB780 /* shoe.jpg */; };
 		FA9104BD1F337278005FB780 /* tulips.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B51F337278005FB780 /* tulips.jpg */; };
 		FA9104BF1F3372CF005FB780 /* PictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9104BE1F3372CF005FB780 /* PictureViewController.xib */; };
+		FAEEEE041F3A550D0070B755 /* flower_retrained_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAEEEE031F3A550D0070B755 /* flower_retrained_labels.txt */; };
+		FAEEEE071F3A556B0070B755 /* flowers_quantized_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = FAEEEE061F3A55220070B755 /* flowers_quantized_graph.pb */; };
+		FAEEEE081F3A556E0070B755 /* flower_retrained.pb in Resources */ = {isa = PBXBuildFile; fileRef = FAEEEE051F3A551D0070B755 /* flower_retrained.pb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,13 +53,13 @@
 		FA9104AC1F33723B005FB780 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
 		FA9104AE1F337278005FB780 /* daisy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daisy.jpg; sourceTree = "<group>"; };
 		FA9104AF1F337278005FB780 /* evergreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = evergreen.jpg; sourceTree = "<group>"; };
-		FA9104B01F337278005FB780 /* flower_retrained_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flower_retrained_labels.txt; sourceTree = "<group>"; };
-		FA9104B11F337278005FB780 /* flower_retrained.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = flower_retrained.pb; sourceTree = "<group>"; };
-		FA9104B21F337278005FB780 /* flowers_quantized_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = flowers_quantized_graph.pb; sourceTree = "<group>"; };
 		FA9104B31F337278005FB780 /* roses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roses.jpg; sourceTree = "<group>"; };
 		FA9104B41F337278005FB780 /* shoe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shoe.jpg; sourceTree = "<group>"; };
 		FA9104B51F337278005FB780 /* tulips.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tulips.jpg; sourceTree = "<group>"; };
 		FA9104BE1F3372CF005FB780 /* PictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PictureViewController.xib; sourceTree = "<group>"; };
+		FAEEEE031F3A550D0070B755 /* flower_retrained_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flower_retrained_labels.txt; sourceTree = "<group>"; };
+		FAEEEE051F3A551D0070B755 /* flower_retrained.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = flower_retrained.pb; sourceTree = "<group>"; };
+		FAEEEE061F3A55220070B755 /* flowers_quantized_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = flowers_quantized_graph.pb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,11 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				59A3CFF51CF4E68100C4259F /* grace_hopper.jpg */,
+				FAEEEE031F3A550D0070B755 /* flower_retrained_labels.txt */,
+				FAEEEE051F3A551D0070B755 /* flower_retrained.pb */,
+				FAEEEE061F3A55220070B755 /* flowers_quantized_graph.pb */,
 				FA9104AE1F337278005FB780 /* daisy.jpg */,
 				FA9104AF1F337278005FB780 /* evergreen.jpg */,
-				FA9104B01F337278005FB780 /* flower_retrained_labels.txt */,
-				FA9104B11F337278005FB780 /* flower_retrained.pb */,
-				FA9104B21F337278005FB780 /* flowers_quantized_graph.pb */,
 				FA9104B31F337278005FB780 /* roses.jpg */,
 				FA9104B41F337278005FB780 /* shoe.jpg */,
 				FA9104B51F337278005FB780 /* tulips.jpg */,
@@ -206,16 +206,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				59A3D00C1CF4E68100C4259F /* RunModelViewController.xib in Resources */,
+				FAEEEE071F3A556B0070B755 /* flowers_quantized_graph.pb in Resources */,
 				FA9104B61F337278005FB780 /* daisy.jpg in Resources */,
+				FAEEEE081F3A556E0070B755 /* flower_retrained.pb in Resources */,
 				FA9104BD1F337278005FB780 /* tulips.jpg in Resources */,
 				59A3D0031CF4E68100C4259F /* grace_hopper.jpg in Resources */,
 				FA9104B71F337278005FB780 /* evergreen.jpg in Resources */,
 				FA9104BC1F337278005FB780 /* shoe.jpg in Resources */,
+				FAEEEE041F3A550D0070B755 /* flower_retrained_labels.txt in Resources */,
 				FA9104BB1F337278005FB780 /* roses.jpg in Resources */,
 				FA9104BF1F3372CF005FB780 /* PictureViewController.xib in Resources */,
-				FA9104B81F337278005FB780 /* flower_retrained_labels.txt in Resources */,
-				FA9104B91F337278005FB780 /* flower_retrained.pb in Resources */,
-				FA9104BA1F337278005FB780 /* flowers_quantized_graph.pb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
