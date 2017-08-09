@@ -87,13 +87,14 @@
     NSDictionary *results = [FlowerClassifier getFlowerClassificationForImage:image];
 
     NSMutableString *alertMessage = [[NSMutableString alloc] init];
+
     for (NSString *key in [results allKeys]) {
-        NSArray *sortedKeys = [[[[results allValues]
+        NSArray *sortedValues = [[[[results allValues]
                                  sortedArrayUsingSelector:@selector(compare:)]
                                 reverseObjectEnumerator]
                                allObjects];
 
-        if ([sortedKeys.firstObject floatValue] < 0.4) {
+        if ([sortedValues.firstObject floatValue] < 0.4) {
             alertMessage = [[NSMutableString alloc] initWithString:@"No flowers here!"];
         } else {
             [alertMessage appendString:key];
