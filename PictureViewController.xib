@@ -17,30 +17,40 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbS-Kq-nK1">
-                    <rect key="frame" x="148" y="269" width="79" height="30"/>
+                    <rect key="frame" x="148" y="243.5" width="79" height="30"/>
                     <state key="normal" title="Camera 📷"/>
                     <connections>
                         <action selector="photoButtonPressed:" destination="-1" eventType="touchUpInside" id="BZf-In-R4m"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gz-jd-k2z">
-                    <rect key="frame" x="129.5" y="369" width="117" height="30"/>
+                    <rect key="frame" x="129.5" y="393.5" width="117" height="30"/>
                     <state key="normal" title="Photo Library 🖼"/>
                     <connections>
                         <action selector="photoLibraryButtonPressed:" destination="-1" eventType="touchUpInside" id="3fY-bq-VsD"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhI-1Z-86b">
+                    <rect key="frame" x="133" y="318.5" width="110" height="30"/>
+                    <state key="normal" title="Live Camera 📹"/>
+                    <connections>
+                        <action selector="liveCameraButtonPressed:" destination="-1" eventType="touchUpInside" id="Ox0-jY-snX"/>
+                        <action selector="photoButtonPressed:" destination="-1" eventType="touchUpInside" id="Ouv-eQ-h9k"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
             <constraints>
-                <constraint firstItem="7Gz-jd-k2z" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="50" id="9h4-am-aoN"/>
+                <constraint firstItem="IhI-1Z-86b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7ji-ED-d5K"/>
+                <constraint firstItem="7Gz-jd-k2z" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="75" id="9h4-am-aoN"/>
                 <constraint firstItem="GbS-Kq-nK1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IGb-uX-JPy"/>
-                <constraint firstItem="GbS-Kq-nK1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="ZfT-h0-rUs"/>
+                <constraint firstItem="IhI-1Z-86b" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="IuN-Xg-YDL"/>
+                <constraint firstItem="GbS-Kq-nK1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-75" id="ZfT-h0-rUs"/>
                 <constraint firstItem="7Gz-jd-k2z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wlR-po-guz"/>
             </constraints>
             <point key="canvasLocation" x="129" y="48"/>
