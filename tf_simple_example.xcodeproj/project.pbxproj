@@ -27,6 +27,8 @@
 		FA9104BC1F337278005FB780 /* shoe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B41F337278005FB780 /* shoe.jpg */; };
 		FA9104BD1F337278005FB780 /* tulips.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA9104B51F337278005FB780 /* tulips.jpg */; };
 		FA9104BF1F3372CF005FB780 /* PictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9104BE1F3372CF005FB780 /* PictureViewController.xib */; };
+		FAEEEE5F1F3E77F50070B755 /* LiveCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEEEE5D1F3E77F50070B755 /* LiveCameraViewController.m */; };
+		FAEEEE601F3E77F50070B755 /* LiveCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAEEEE5E1F3E77F50070B755 /* LiveCameraViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,9 @@
 		FA9104B41F337278005FB780 /* shoe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shoe.jpg; sourceTree = "<group>"; };
 		FA9104B51F337278005FB780 /* tulips.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tulips.jpg; sourceTree = "<group>"; };
 		FA9104BE1F3372CF005FB780 /* PictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PictureViewController.xib; sourceTree = "<group>"; };
+		FAEEEE5C1F3E77F50070B755 /* LiveCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveCameraViewController.h; sourceTree = "<group>"; };
+		FAEEEE5D1F3E77F50070B755 /* LiveCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveCameraViewController.m; sourceTree = "<group>"; };
+		FAEEEE5E1F3E77F50070B755 /* LiveCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveCameraViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,9 @@
 				FA9104AB1F33723B005FB780 /* PictureViewController.h */,
 				FA9104AC1F33723B005FB780 /* PictureViewController.m */,
 				FA9104BE1F3372CF005FB780 /* PictureViewController.xib */,
+				FAEEEE5C1F3E77F50070B755 /* LiveCameraViewController.h */,
+				FAEEEE5D1F3E77F50070B755 /* LiveCameraViewController.m */,
+				FAEEEE5E1F3E77F50070B755 /* LiveCameraViewController.xib */,
 				59A3CFF31CF4E68100C4259F /* data */,
 				59A3CFFA1CF4E68100C4259F /* ios_image_load.h */,
 				59A3CFFB1CF4E68100C4259F /* ios_image_load.mm */,
@@ -214,6 +222,7 @@
 				FA9104BB1F337278005FB780 /* roses.jpg in Resources */,
 				FA9104BF1F3372CF005FB780 /* PictureViewController.xib in Resources */,
 				FA9104B81F337278005FB780 /* flower_retrained_labels.txt in Resources */,
+				FAEEEE601F3E77F50070B755 /* LiveCameraViewController.xib in Resources */,
 				FA9104B91F337278005FB780 /* flower_retrained.pb in Resources */,
 				FA9104BA1F337278005FB780 /* flowers_quantized_graph.pb in Resources */,
 			);
@@ -278,6 +287,7 @@
 				FA9104AD1F33723B005FB780 /* PictureViewController.m in Sources */,
 				FA9104AA1F337226005FB780 /* FlowerClassifier.mm in Sources */,
 				59A3D0011CF4E68100C4259F /* AppDelegate.mm in Sources */,
+				FAEEEE5F1F3E77F50070B755 /* LiveCameraViewController.m in Sources */,
 				59A3D00B1CF4E68100C4259F /* RunModelViewController.mm in Sources */,
 				59A3D0081CF4E68100C4259F /* ios_image_load.mm in Sources */,
 			);

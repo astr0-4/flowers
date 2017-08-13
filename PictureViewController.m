@@ -8,8 +8,11 @@
 
 #import "PictureViewController.h"
 #import "FlowerClassifier.h"
+#import <AVFoundation/AVFoundation.h>
+#import "LiveCameraViewController.h"
 
-@interface PictureViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface PictureViewController ()
+<UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *cameraButton;
 @property (weak, nonatomic) IBOutlet UIButton *libraryButton;
 
@@ -110,5 +113,12 @@
     [alert addAction:ok];
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+- (IBAction)liveCameraButtonPressed:(UIButton *)sender {
+
+    LiveCameraViewController *imageVC = [[LiveCameraViewController alloc] init];
+    [self presentViewController:imageVC animated:YES completion:nil];
+}
+
 
 @end
